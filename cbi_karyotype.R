@@ -409,25 +409,3 @@ write.table(cbi$l_percentage, file = '/Users/martinknytl/Google\ Drive/My\ Drive
 write.table(cbi$i, file = '/Users/martinknytl/Google\ Drive/My\ Drive/pracovni_slozka/vyzkum/moje_publikace/rozpracovane/cobitis_unal_et_al/R/cbi_i_dissected.tsv', 
             col.names = FALSE,
             row.names = FALSE, sep = "\t")
-
-
-
-
-
-
-
-# the plot functions from previous paper
-plot(final_table$median_i, final_table$median_l, pch=16, col="red", ylim = c(0, 5), xlim = c(0, 50), xlab = "centromeric index", ylab = "chromosomal length (%)", ann=TRUE, las=1, abline(v=c(0, 12.5, 25, 37.5, 50), col="gray", lty=2))
-
-boxplot(l_chromosome1_20$l_chromosome1,l_chromosome1_20$l_chromosome2,l_chromosome1_20$l_chromosome3,l_chromosome1_20$l_chromosome4,l_chromosome1_20$l_chromosome5,l_chromosome1_20$l_chromosome6,l_chromosome1_20$l_chromosome7,l_chromosome1_20$l_chromosome8,l_chromosome1_20$l_chromosome9,l_chromosome1_20$l_chromosome10,l_chromosome1_20$l_chromosome11,l_chromosome1_20$l_chromosome12,l_chromosome1_20$l_chromosome13,l_chromosome1_20$l_chromosome14,l_chromosome1_20$l_chromosome15,l_chromosome1_20$l_chromosome16,l_chromosome1_20$l_chromosome17,l_chromosome1_20$l_chromosome18,l_chromosome1_20$l_chromosome19,l_chromosome1_20$l_chromosome20, ylim=c(0, 5), xlim=c(1, 20), horizontal = FALSE, ylab = "chromosomal length (%)", xlab = "chromosome", las = 1, pch = 20, whisklty = 3, boxcol = "red", boxfill = gray(0.95), boxlwd = 2, boxwex = 0.7, names = chromosome)
-
-
-
-# create a file list
-# file_list<-grep(list.files(path="./moving_avg",full.names = TRUE), pattern='\\movingavg$', value=TRUE)
-
-# print(file_list)
-
-# combine files adding pop and sex from file name
-
-# df <- do.call(rbind, lapply(file_list, function(x) cbind(read.table(x), file_name=tail(strsplit(x, "/")[[1]],n=1))))
