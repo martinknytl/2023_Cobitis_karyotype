@@ -16,3 +16,5 @@ Cobitis fahireae:
 ```
 awk -F"\t" -v OFS="\t" '{ for(N=1; N<=NF; N++) if($N=="") $N="0" } 1' cobitis_chr_length_and_p-q_arm_ratio-cfa1.tsv  > cobitis_chr_length_and_p-q_arm_ratio-cfa1II.tsv
 ```
+
+R scripts are separately in files
