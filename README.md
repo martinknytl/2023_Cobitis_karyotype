@@ -20,7 +20,11 @@ awk -F"\t" -v OFS="\t" '{ for(N=1; N<=NF; N++) if($N=="") $N="0" } 1' cobitis_ch
 # R scripts are shown in separate files under names:
 
 anova.R
+
 cbi_cfa_ctu_plots.R
+
 cbi_karyotype.R
+
 cfa_karyotype.R
+
 ctu_karyotype.R
